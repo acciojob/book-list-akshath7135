@@ -7,7 +7,36 @@
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
+	<h1>My Book List</h1>
+	<div class=form-group>
+		<form onsubmit="addBook(event)">
+			<label for="title">Title
+			<input type="text" id="title">
+			</label>
+			<br>
+			<br>
+			<label for="author">Author
+			<input type="text" id="author">
+			</label><br><br>
+			<label for="isbn">ISBN#
+			<input type="text" id="isbn">
+			</label><br>
+			<br>
+			<button id="submit" type="submit">Add Book</button>
+		</form>
+		<br>
+		<table class="table">
+			<thead>
+			<tr>
+				<th>Title &nbsp</th>
+				<th>Author &nbsp</th>
+				<th>ISBN# </th>
+			</tr>
+			</thead>
+			<tbody id="book-list">
+            </tbody>
+		</table>
+	</div>
     <script type="text/javascript" src="./script.js">
 </script>
 
