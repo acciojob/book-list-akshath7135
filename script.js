@@ -13,7 +13,7 @@ function addBook(event) {
 
 	document.getElementById("book-list").appendChild(rw);
 
-	row.querySelector(".delete").addEventListener("click", () => {
-        row.remove();
+	rw.querySelector(".delete").addEventListener("click", () => {
+        rw.remove();
     });
 }
